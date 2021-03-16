@@ -1,0 +1,6 @@
+real_main.c:60:6:init_peripheral	8	static
+real_main.c:123:6:HAL_ADCEx_InjectedConvCpltCallback	16	static
+real_main.c:130:6:HAL_TIM_PeriodElapsedCallback	16	static
+real_main.c:136:6:HAL_TIM_IC_CaptureCallback	16	static
+real_main.c:147:6:main_loop	4	static
+real_main.c:158:6:main_Interrupt	8	static

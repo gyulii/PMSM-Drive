@@ -1,0 +1,7 @@
+bldc_drive.c:55:6:init_SixStep	16	static
+bldc_drive.c:64:6:six_step_commutation	24	static
+bldc_drive.c:85:5:hall_read_actual_value	16	static
+bldc_drive.c:91:6:Adc_read_values	16	static
+bldc_drive.c:101:6:get_mech_freq	16	static
+bldc_drive.c:109:6:get_mech_period	16	static
+bldc_drive.c:116:6:set_pwm_duty_non_inverted	16	static
