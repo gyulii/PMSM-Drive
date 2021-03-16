@@ -160,6 +160,9 @@ void main_Interrupt()
 	get_mech_period(&hall_sensor_transit_times_struct);
 	get_mech_freq(&hall_sensor_transit_times_struct);
 	state_machine_variable_bldc.hall_sensor_Actual_state = hall_read_actual_value();
+
+	PID_Update(&PID_Handler,state_machine_variable_bldc.desired_mech_freq ,hall_sensor_transit_times_struct.last_mech_freq);
+
 	six_step_commutation(&state_machine_variable_bldc);
 }
 

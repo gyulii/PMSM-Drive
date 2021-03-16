@@ -26,17 +26,16 @@ typedef struct{
 	float limit_max_output;
 
 
-
-	float limMin_Integrator;
-	float limMax_Integrator;
-
 	/*	Ts time	*/
 
 	float T;
 
 	/* Mem block */
+	int is_int_winded_up;
 
+	float proportional;
 	float integrator;
+	float prevIntegrator; // For Anti wind up
 	float prevError; // For I
 	float differentiator;
 	float prevMeasurment;  // for D

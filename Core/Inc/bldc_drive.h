@@ -33,6 +33,7 @@ typedef struct{
 	uint16_t pwm_duty_normal;
 	uint16_t last_pwm_duty;
 	uint16_t pwn_period_time_ARR;
+	float desired_mech_freq;
 }six_step_handler;
 
 
