@@ -54,8 +54,8 @@ all: main-build
 main-build: MOTOR_HAJTAS_PMSM_V2.elf secondary-outputs
 
 # Tool invocations
-MOTOR_HAJTAS_PMSM_V2.elf: $(OBJS) $(USER_OBJS) D:\STM32_CUBE\Workspace\MOTOR_HAJTAS_PMSM_V2\STM32F103C8TX_FLASH.ld
-	arm-none-eabi-gcc -o "MOTOR_HAJTAS_PMSM_V2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\STM32_CUBE\Workspace\MOTOR_HAJTAS_PMSM_V2\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MOTOR_HAJTAS_PMSM_V2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+MOTOR_HAJTAS_PMSM_V2.elf: $(OBJS) $(USER_OBJS) D:\STM32_CUBE\Workspace\MOTOR_HAJTAS_PMSM_V2\PMSM-Drive\STM32F103C8TX_FLASH.ld
+	arm-none-eabi-gcc -o "MOTOR_HAJTAS_PMSM_V2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\STM32_CUBE\Workspace\MOTOR_HAJTAS_PMSM_V2\PMSM-Drive\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MOTOR_HAJTAS_PMSM_V2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
