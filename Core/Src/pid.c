@@ -36,4 +36,12 @@ float PID_Update(PID *PID_H, float setpoint, float measurment)
 	/*	Limit	*/
 
 
+
+
+
+
+
+	PID_H->prevMeasurment = measurment;
+	PID_H -> prevError = error;
+
 }
